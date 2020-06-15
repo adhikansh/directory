@@ -54,6 +54,15 @@ export class AppComponent {
     this.personDetailsList.push(new PersonDetails(18, 'Nethra', 7465857585, 26, 'New Delhi'));
     this.personDetailsList.push(new PersonDetails(19, 'Vaibhav', 9989989989, 23, 'New Delhi'));
     this.personDetailsList.push(new PersonDetails(20, 'Rahul', 74847484834, 26, 'New Delhi'));
+    this.personDetailsList.sort((person1, person2) => {
+      if(person1.name > person2.name){
+        return 1;
+      }else if(person1.name < person2.name) {
+        return -1;
+      }else{
+        return 0;
+      }
+    })
     this.personDetailsListCopy = this.personDetailsList;
     this.dataSource.sort = this.sort;
 
