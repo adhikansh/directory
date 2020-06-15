@@ -1,0 +1,30 @@
+
+<mat-card>
+    <mat-card-title style="margin-bottom: 20px;">
+        Person Details
+        <span class="material-icons" style="float: right; cursor: pointer;" (click)=doClose()>
+            
+            </span>
+    </mat-card-title>
+    <mat-card-content>
+        <div style="display: flex;">
+            <label style="flex: 1;">Name: </label>
+            <input style="flex: 3; margin-bottom: 10px;" matInput type='text' [(ngModel)]="personDetails.name">
+        </div>
+        <div style="display: flex;">
+            <label style="flex: 1;">Phone Number: </label>
+            <input style="flex: 3; margin-bottom: 10px;" matInput type='number' [(ngModel)]="personDetails.phoneNumber">
+        </div>
+        <div style="display: flex;">
+
+            <label style="flex: 1;">Age: </label>
+            <input style="flex: 3; margin-bottom: 10px;" matInput type='text' [(ngModel)]="personDetails.age">
+        </div>
+        <div style="display: flex;">
+
+            <label style="flex: 1;">Address: </label>
+            <textarea style="flex: 3; margin-bottom: 10px;" matInput [(ngModel)]="personDetails.address">
+        </textarea>
+        </div>
+    </mat-card-content>
+</mat-card>
